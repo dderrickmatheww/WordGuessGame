@@ -1,0 +1,57 @@
+body {
+    background-color: maroon;
+    color: #CCCC00;
+    text-shadow:
+		-.03px -.03px 0 #000,
+		.03px -.03px 0 #000,
+		-.03px .03px 0 #000,
+		.03px .03px 0 #000;
+}
+#background {
+    background-color: darkred;
+    background-image: url(../image/background1.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-bottom: 2px double lightcoral;
+}
+
+#newGameButton {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: #CCCC00;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow:
+		-.03px -.03px 0 #000,
+		.03px -.03px 0 #000,
+		-.03px .03px 0 #000,
+		.03px .03px 0 #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px darkred;
+}
+
+#newGameButton:hover {
+    box-shadow: 0 4px darkred;
+    top: 2px;
+}
+
+#newGameButton:active {
+    box-shadow: 0 0 darkred;
+    top: 6px;
+}
+
+#placeholder-section {
+    
+    
+}
+
+#placeholders {
+    letter-spacing: 6px;
+    font-size: 40px;
+}
