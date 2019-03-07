@@ -50,3 +50,11 @@ body {
     letter-spacing: 6px;
     font-size: 40px;
 }
+
+#footer {
+    border-top: 2px double lightcoral;
+    background-image: url(../image/background1.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
