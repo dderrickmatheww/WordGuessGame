@@ -15,7 +15,7 @@ body {
     border-bottom: 2px double lightcoral;
 }
 
-#newGameButton {
+#new-game-button {
     outline: none;
     border: none;
     cursor: pointer;
@@ -36,19 +36,14 @@ body {
     box-shadow: 0 6px darkred;
 }
 
-#newGameButton:hover {
+#new-game-button:hover {
     box-shadow: 0 4px darkred;
     top: 2px;
 }
 
-#newGameButton:active {
+#new-game-button:active {
     box-shadow: 0 0 darkred;
     top: 6px;
-}
-
-#placeholder-section {
-    
-    
 }
 
 #placeholders {
