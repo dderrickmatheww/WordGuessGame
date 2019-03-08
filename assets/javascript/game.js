@@ -130,7 +130,7 @@ $newGameButton.addEventListener("click", newGame);
 // Add onkeyup event to trigger letterGuess
 document.onkeyup = function(event) {
     console.dir(event);
-    prompt(event)
+    prompt(onkeyup(event))
     if (event.keyCode >= 65 && event.keyCode <= 90);
     letterGuess(event.key);
     
