@@ -17,7 +17,7 @@ var pickedWord = "";
 var pickedWordPlaceholderArr = [];
 var guessedLetterBank = [];
 var incorrectLetterBank = [];
-
+var audio = [new Audio('apex.mp3'), new Audio('Apextheme.mp3.mp3')];
 //newGame function to reset all stats, pick new word and create placeholders
 
 
@@ -27,7 +27,7 @@ function newGame() {
     guessedLetterBank = [];
     incorrectLetterBank = [];
     pickedWordPlaceholderArr = [];
-
+    
     //Pick a new word
 
     pickedWord = wordbank[Math.floor(Math.random() * wordbank.length)];
@@ -47,6 +47,8 @@ function newGame() {
     $guessesLeft.textContent = guessesLeft;
     $placeholders.textContent = pickedWordPlaceholderArr.join("");
     $guessedLetters.textContent = incorrectLetterBank;
+    
+    
 }
 
 //letterGuess function, takes in the letter you pressed and see if it's in the selected word
@@ -99,26 +101,26 @@ function checkIncorrect(letter) {
 
 //checkLose
 function checkLose() {
-    var audio = new Audio('apex.mp3')
+    
     if (guessesLeft === 0) {
         losses++;
         gameRunning = false;
         $losses.textContent = losses;
-        audio.play();
-        alert("YOU LOSE!")
+        audio[0].play();
+        setTimeout(() => alert("YOU LOSE!"), 0)
     }
     checkWin()
 }
 //checkWin
 function checkWin() {
-    var audio = new Audio('Apextheme.mp3.mp3');
+    
 
     if(pickedWord.toLowerCase() === pickedWordPlaceholderArr.join("").toLowerCase()){
         wins++;
         gameRunning = false;
         $wins.textContent = wins;
-        audio.play();
-        alert("YOU WON!")
+        audio[1].play();
+        setTimeout(() => alert("YOU WON!"), 2)
     }
     
 }
@@ -128,6 +130,7 @@ $newGameButton.addEventListener("click", newGame);
 // Add onkeyup event to trigger letterGuess
 document.onkeyup = function(event) {
     console.dir(event);
+    prompt()
     if (event.keyCode >= 65 && event.keyCode <= 90);
     letterGuess(event.key);
 }
