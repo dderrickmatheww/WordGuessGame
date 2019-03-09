@@ -8,7 +8,7 @@ var $wins = document.getElementById("wins");
 var $losses = document.getElementById("losses");
 
 //Create vars for game (wordbank, wins, loses, picked word, guesses left, game running, picked word placeholder, guessed letter bank, incorrect letter bank.)
-var wordbank = ["Wingmen", "Wraith", "Lifeline", "Peace Keeper", "Spitfire", "Bangalore", "Octane", "Hemlock", "Mirage"];
+var wordbank = ["Wingman", "Wraith", "Lifeline", "Peace Keeper", "Spitfire", "Bangalore", "Octane", "Hemlock", "Mirage"];
 var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
@@ -137,10 +137,10 @@ function checkWin() {
 //Add event listener for new game button
 $newGameButton.addEventListener("click", newGame);
 // Add onkeyup event to trigger letterGuess
-document.onkeyup = function(event) {
-    console.dir(event);
+document.onkeyup = function(letter) {
+    console.dir(letter);
     
     if (event.keyCode >= 65 && event.keyCode <= 90);
-    letterGuess(event.key);
+    letterGuess(letter.key);
     
 }
