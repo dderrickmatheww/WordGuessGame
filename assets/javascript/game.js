@@ -8,7 +8,7 @@ var $wins = document.getElementById("wins");
 var $losses = document.getElementById("losses");
 
 //Create vars for game (wordbank, wins, loses, picked word, guesses left, game running, picked word placeholder, guessed letter bank, incorrect letter bank.)
-var wordbank = ["Wingmen", "Wraith", "Lifeline", "Peace Keeper", "Spitfire"];
+var wordbank = ["Wingmen", "Wraith", "Lifeline", "Peace Keeper", "Spitfire", "Bangalore", "Octane", "Hemlock", "Mirage"];
 var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
