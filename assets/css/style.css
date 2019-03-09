@@ -58,3 +58,14 @@ body {
     text-align: center;
 }
 
+#winlose {
+    
+    
+    z-index: 40000;
+    display: none;
+}
+
+#winlose2 {
+    z-index: 4000;
+    display: none;
+}
